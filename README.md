@@ -1,6 +1,6 @@
 # Phraser
 
-Phraser is a gem that scans a text file and returns the top uses phrases
+Phraser is a gem that scans a text file and returns the most common phrases
 
 ```ruby
 $ phraser count the-raven.txt --words 3 --results 10
