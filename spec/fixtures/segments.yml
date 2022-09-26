@@ -1,0 +1,27 @@
+- text: This is a sentence! And this is also a sentence.'
+  desc: splits on boundaries
+  result:
+    - ["this", "is", "a", "sentence"]
+    - ["and", "this", "is", "also", "a", "sentence"]
+- text: This is cool (but this is not)
+  result:
+    - [ "this", "is", "cool" ]
+    - [ "but", "this", "is", "not" ]
+  desc: splits on parens
+- text: Welcome to Mr. Roger's neighborhood.
+  desc: handles abbreviations
+  result:
+    - ["welcome", "to", "mr.", "roger's", "neighborhood"]
+- text: "This sentence\n has linebreaks."
+  desc: ignores linebreaks
+  result:
+    - ["this", "sentence", "has", "linebreaks"]
+- text: Nothing but two dismal tallow candles, each in a winding sheet.
+  desc: ignores commas
+  result:
+    - ["nothing", "but", "two", "dismal", "tallow", "candles", "each", "in", "a", "winding", "sheet"]
+- text: Quoth the Raven “Nevermore.”
+  desc: ignores quotes
+  result:
+  - ["quoth", "the", "raven", "nevermore"]
+
