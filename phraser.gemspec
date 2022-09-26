@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email = ["aaronchi@gmail.com"]
 
   spec.summary = "Parses text and returns most common phrases"
-  # spec.homepage = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage = "https://github.com/aaronchi/phraser"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 2.6.0"
 
